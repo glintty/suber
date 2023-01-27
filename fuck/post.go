@@ -23,7 +23,7 @@ func Post(c *gin.Context) {
 
 	fucker := uuid.NewString()
 
-	c.SaveUploadedFile(file, "/home/glint/code/go/src/suberbutmoreworse/shid/"+fucker+filepath.Ext(file.Filename))
+	c.SaveUploadedFile(file, "/home/glint/code/go/src/suber/shid/"+fucker+filepath.Ext(file.Filename))
 	c.String(http.StatusAccepted, "i hope this isnt pornography! \nsuck my: localhost:8080"+fucker+filepath.Ext(file.Filename))
 
 }
